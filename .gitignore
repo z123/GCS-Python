@@ -1,0 +1,6 @@
+keys
+config.py
+test.py
+*.swp
+*.pyc
+*.DS_STORE
