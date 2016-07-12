@@ -54,7 +54,7 @@ class GCSClient(object):
         self.gcs = gcs_service
         self.project_id = project_id
 
-    def upload(self, filename=None, bucket_id=None, blob_location=None):
+    def upload_from_filename(self, filename=None, bucket_id=None, blob_location=None):
         media = MediaFileUpload(filename)
         if not media.mimetype():
             media = MediaFileUpload(filename, DEFAULT_MIMETYPE)
